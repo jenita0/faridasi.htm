@@ -1,0 +1,130 @@
+  <HTML>
+<HEAD>
+<TITLE>Biodata</TITLE>\
+<!-This is the First Validation -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function validate(){
+submitOK="True"
+x=document.form1
+
+name1=x.uname.value
+if (name1.length==0)
+ {
+alert("Username harus disini.")
+submitOk="False"
+}
+else if (name1.length>20) {
+ alert("Username tidak boleh >20 karakter.")
+submitOk="False"
+}
+
+Fname2=x.fname.value
+if (Fname2.length==0)
+ {
+  alert("Nama depan harus diisi.")
+  submitOk="False"
+  }
+  
+Lname3=x.lname.value
+if (Lname3.length==0)
+  {
+  alert("Nama belakang tidak boleh kosong.")
+  submitOk="False"
+  }
+  
+  
+  //validasi radiobutton
+  var counter=0;
+  jk=x.gender.length;
+  for (i=0; i < jk; i++) {
+  if (x.gender[i].check) counter++;
+  }
+  
+  if(counter==0) {alert("Pilih salah satu gender.")};
+  //validasi radiobutton
+  
+  
+  //validasi check box
+ cekhobi=x.hobi.length;
+ for (i=0; i < cekhobi; i++) {
+ if (x.hobi[i].checked) counter++;
+ }
+ 
+ if(counter==0) {alert("Pilih salah satu hobi.")};
+  //validasi check box
+  
+  
+  almt=x.alamat.value
+  if (almt.length==0 || almt.length<10)
+   {
+   alert("Alamat harus lengkat.")
+   submitOK="False"
+   }
+  Phonenum=x.phone.value
+  if (Phonenum.length==0)
+   {
+   alert("Nomer telepon tidak boleh kosong.")
+   submitOK="False"
+   }
+   job=x.kerja.value
+   if (job.length==0)
+    {
+	alert("Isi form pekerjaan.")
+	submitOK="False"
+	}
+   kesan=x.komen.value
+   if (kesan length==0)
+    {
+	alert("Silakan isi kesan dan pesan.")
+	submitOk="False"
+	}
+   
+  // This is the second Validation
+  password=x.pwd.value
+  if (password.length==0)
+   {
+   alert("Password harus diisi.")
+   submitOk="False"
+   }
+  verifypassword=x.pwd1.value
+  if (verifypassword.length==0)
+   {
+   alert("Re-enter password harus diisi.")
+   submitOK="False"
+   }
+  if (password!=verifypassword)
+  {
+   alert("Password and Re-enter password harus sama!")
+   submitOK="False"
+  }
+  
+  // This is the Third Validation 
+  emailattherate=x.email.value.indexOF("@")
+  if (emailattherate==-1)
+   {
+   alert("Invalid E-mail")
+   submitOK="False"
+   }
+  if (submitOK=="False")
+   {
+  return false
+   }
+  }
+  -->
+  </SCRIPT>
+  </HEAD>
+  <BODY>
+  <font class="isi">
+  <h2>Curriculum Vitae</h2>
+	  Silakan isi biodata di bawah ini:</br>
+	<FORM NAME="form1" onSubmit='return validate()"
+	action="thanks.html" method="post">
+	<table class="p_align" cellspacing="5">
+	<tr>
+   
+	
+  
+
+ 
